@@ -28,6 +28,13 @@ public class Chuveiro{
         this.ligado = ligado;
         this.chuveiroCheio = chuveiroCheio;
         this.clima = clima;
+
+        this.chuveiroCheio = false;
     }
 
+    public void encherChuveiro(){
+        this.chuveiroCheio = true;
+    }
+
+    
 }
