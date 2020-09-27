@@ -10,6 +10,10 @@ public class FolhaDePagamentoUFV {
         this.dataDePagamento = dataDePagamento;
         this.totalDeVencimentos = totalDeVencimentos;
     }
+
+    public FolhaDePagamentoUFV(){
+
+    }
     
     public FuncionarioUFV getFuncionario() {
         return funcionario;
@@ -38,10 +42,12 @@ public class FolhaDePagamentoUFV {
     
 
     public void imprimirDados(){
-        System.out.printf("data de nascimento:%d, %s, %d\n", funcionario.getDataDeNascimento().getDia(), funcionario.getDataDeNascimento().getMes(), funcionario.getDataDeNascimento().getAno());
+        System.out.println("Nome: "+funcionario.getNome());
+        System.out.printf("\n\ndata de nascimento:%d, %s, %d\n", funcionario.getDataDeNascimento().getDia(), funcionario.getDataDeNascimento().getMes(), funcionario.getDataDeNascimento().getAno());
         System.out.println("cargo: " +funcionario.getCargo());
         System.out.println("matricula: " +funcionario.getMatricula());
         System.out.println("Salario: " +this.totalDeVencimentos);
+        System.out.printf("Data de pagamento: %d, %s, %d", this.dataDePagamento.getDia(), this.dataDePagamento.getMes(), this.dataDePagamento.getAno());
     }
 
     
