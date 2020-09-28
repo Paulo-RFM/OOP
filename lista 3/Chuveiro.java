@@ -36,5 +36,13 @@ public class Chuveiro{
         this.chuveiroCheio = true;
     }
 
+    public void ligarChuveiro(){
+        if(chuveiroCheio){
+            this.ligado = true;
+        }else{
+            System.out.println("Chuveiro vazio! Abrir agua antes");
+        }
+    }
+
     
 }
