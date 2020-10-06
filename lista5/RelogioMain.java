@@ -4,10 +4,18 @@ public class RelogioMain {
 
     public static void main(String[] args){
 
-        Scanner input = new Scanner(System.in);
+        final Scanner input = new Scanner(System.in);
         int hora, minuto, segundo;
+        CadastroClientes cliente1 = new CadastroClientes();
+        String nome, email;
+        System.out.print("nome: ");
+        nome = input.nextLine();
+        System.out.print("email: ");
+        email = input.nextLine();
 
-        hora = input.nextInt();
+        cliente1.cadastrarEmail(nome, email);
+
+      /*  hora = input.nextInt();
         minuto = input.nextInt();
         segundo = input.nextInt();
 
@@ -37,6 +45,8 @@ public class RelogioMain {
         segundo = input.nextInt();
         Tempo tempo = new Tempo(hora, minuto, segundo);
         return tempo;
-    }
+    }*/
 
+    
+    }
 }
