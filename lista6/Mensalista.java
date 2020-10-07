@@ -3,8 +3,7 @@ public class Mensalista extends Funcionario{
     private double salarioMensal;
 
     public Mensalista(String nome, int matricula, double salarioMensal){
-        super.setNome(nome);
-        super.setMatricula(matricula);
+        super(nome, matricula);
         this.setSalarioMensal(salarioMensal);
     }
 

@@ -5,8 +5,7 @@ public class Horista extends Funcionario {
     
     //Contrutores
     public Horista(String nome, int matricula, double valorHora, int numeroHorastrab){
-        super.setNome(nome);
-        super.setMatricula(matricula);
+        super(nome, matricula);
         setValorHora(valorHora);
         setNumeroHorastrab(numeroHorastrab);
     }

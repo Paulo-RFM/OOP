@@ -39,4 +39,7 @@ public class Funcionario {
         System.out.println("0.0");
     }
 
+	public void Funcionario(String nome2, Object ma) {
+	}
+
 }
