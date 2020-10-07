@@ -1,5 +1,3 @@
-import javax.naming.Context;
-
 public class Horista extends Funcionario {
     
     private double valorHora;
@@ -31,15 +29,15 @@ public class Horista extends Funcionario {
         return valorHora;
     }
 
-    public String calcularSalario(double valorHora, int numeroHorastrab){
-        Double salario = (double) valorHora * numeroHorastrab;
-        return salario.toString();
+    public double calcularSalario(double valorHora, int numeroHorastrab){
+        double salario = (double) valorHora * numeroHorastrab;
+        return salario;
     }
 
     public void imprimirDados(){
         super.imprimirDados();
         System.out.printf("Valor da hora: %.2f\nHoras Trabalhadas: %d\n", this.getValorHora(), this.getNumeroHorastrab());
-        System.out.printf("Salario: %s\n", calcularSalario(getValorHora(), getNumeroHorastrab()));
+        System.out.printf("Salario: %.2f\n", calcularSalario(getValorHora(), getNumeroHorastrab()));
     }
 
 }
