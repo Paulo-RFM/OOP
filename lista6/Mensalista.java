@@ -1,18 +1,28 @@
 public class Mensalista extends Funcionario{
     
-   private String salarioMensal;
+    private double salarioMensal;
 
-    public Mensalista(String salarioMensal){
+    public Mensalista(String nome, int matricula, double salarioMensal){
+        super.setNome(nome);
+        super.setMatricula(matricula);
         this.setSalarioMensal(salarioMensal);
     }
 
-    public String getSalarioMensal() {
+    public double getSalarioMensal() {
         return salarioMensal;
     }
     
-    public void setSalarioMensal(String salarioMensal) {
+    public void setSalarioMensal(double salarioMensal) {
         this.salarioMensal = salarioMensal;
     }
 
+    public void imprimirDados(){
+        super.imprimirDados();
+        System.out.printf("Salario mensal: %.2f", this.calcularSalario(this.getSalarioMensal()));
+    }
+
+    public double calcularSalario(double salario){
+        return salario;
+    }
 
 }
